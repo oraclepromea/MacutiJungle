@@ -17,13 +17,20 @@
                 <h2>Mirador Jungle el Macuti</h2>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#accommodations" class="nav-link">Accommodations</a>
-                <a href="#activities" class="nav-link">Activities</a>
-                <a href="#gallery" class="nav-link">Gallery</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="#book" class="nav-link book-btn">Book Now</a>
+                <a href="#home" class="nav-link" data-translate="nav-home">Home</a>
+                <a href="#about" class="nav-link" data-translate="nav-about">About</a>
+                <a href="#accommodations" class="nav-link" data-translate="nav-accommodations">Accommodations</a>
+                <a href="#activities" class="nav-link" data-translate="nav-activities">Activities</a>
+                <a href="#gallery" class="nav-link" data-translate="nav-gallery">Gallery</a>
+                <a href="#contact" class="nav-link" data-translate="nav-contact">Contact</a>
+            </div>
+            <div class="language-toggle">
+                <button class="lang-btn active" data-lang="en">
+                    <img src="https://flagcdn.com/w20/us.png" alt="English"> EN
+                </button>
+                <button class="lang-btn" data-lang="es">
+                    <img src="https://flagcdn.com/w20/es.png" alt="Español"> ES
+                </button>
             </div>
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
@@ -36,11 +43,11 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Experience the Heart of the Amazon</h1>
-            <p>Discover pristine waterfalls, lush jungle landscapes, and authentic Bolivian hospitality at our eco-lodge in Rurrenabaque</p>
+            <h1 data-translate="hero-title">Experience the Heart of the Amazon</h1>
+            <p data-translate="hero-subtitle">Discover pristine waterfalls, lush jungle landscapes, and authentic Bolivian hospitality at our eco-lodge in Rurrenabaque</p>
             <div class="hero-buttons">
-                <a href="#book" class="btn-primary">Reserve Now</a>
-                <a href="#about" class="btn-secondary">Learn More</a>
+                <a href="https://wa.me/59171148008?text=Hi!%20I'm%20interested%20in%20booking%20a%20stay%20at%20Mirador%20Jungle%20el%20Macuti.%20Can%20you%20help%20me%20with%20availability%20and%20rates?" target="_blank" class="btn-primary" data-translate="hero-reserve">Reserve Now</a>
+                <a href="#about" class="btn-secondary" data-translate="hero-learn">Learn More</a>
             </div>
         </div>
         <div class="hero-scroll">
@@ -53,29 +60,35 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>Welcome to Paradise</h2>
-                    <p>Nestled in the heart of the Bolivian Amazon, Mirador Jungle el Macuti offers an unparalleled eco-lodge experience. Our rustic yet comfortable accommodations provide the perfect base for exploring one of the world's most biodiverse regions.</p>
+                    <h2 data-translate="about-title">Welcome to Paradise</h2>
+                    <p data-translate="about-description">Nestled in the heart of the Bolivian Amazon, Mirador Jungle el Macuti offers an unparalleled eco-lodge experience. Our rustic yet comfortable accommodations provide the perfect base for exploring one of the world's most biodiverse regions.</p>
                     
                     <div class="features">
                         <div class="feature">
                             <i class="fas fa-leaf"></i>
-                            <h3>Eco-Friendly</h3>
-                            <p>Sustainable tourism that respects and preserves the natural environment</p>
+                            <div>
+                                <h3 data-translate="feature-eco-title">Eco-Friendly</h3>
+                                <p data-translate="feature-eco-desc">Sustainable tourism that respects and preserves the natural environment</p>
+                            </div>
                         </div>
                         <div class="feature">
                             <i class="fas fa-mountain"></i>
-                            <h3>Stunning Views</h3>
-                            <p>Panoramic vistas of the jungle canopy and pristine waterfalls</p>
+                            <div>
+                                <h3 data-translate="feature-views-title">Stunning Views</h3>
+                                <p data-translate="feature-views-desc">Panoramic vistas of the jungle canopy and pristine waterfalls</p>
+                            </div>
                         </div>
                         <div class="feature">
                             <i class="fas fa-heart"></i>
-                            <h3>Authentic Experience</h3>
-                            <p>Genuine Bolivian hospitality in a tranquil natural setting</p>
+                            <div>
+                                <h3 data-translate="feature-authentic-title">Authentic Experience</h3>
+                                <p data-translate="feature-authentic-desc">Genuine Bolivian hospitality in a tranquil natural setting</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Jungle landscape">
+                    <img src="images/gallery/girl in hammock.jpg" alt="Guest relaxing in hammock at Mirador Jungle el Macuti">
                 </div>
             </div>
         </div>
@@ -84,35 +97,116 @@
     <!-- Accommodations Section -->
     <section id="accommodations" class="accommodations">
         <div class="container">
-            <h2>Comfortable Rustic Accommodations</h2>
-            <p class="section-subtitle">Experience nature without sacrificing comfort</p>
+            <h2 data-translate="accommodations-title">Comfortable Accommodations</h2>
+            <p class="section-subtitle" data-translate="accommodations-subtitle">Choose from our two room options in the heart of the Amazon</p>
+            
+            <!-- Location Image -->
+            <div class="accommodations-hero">
+                <img src="images/gallery/Hero image.jpg" alt="Mirador Jungle el Macuti Lodge Location">
+            </div>
             
             <div class="rooms-grid">
                 <div class="room-card">
-                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Jungle room">
                     <div class="room-content">
-                        <h3>Jungle View Room</h3>
-                        <p>Spacious room with panoramic jungle views, private bathroom, and comfortable bedding. Perfect for nature lovers seeking tranquility.</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Private bathroom</li>
-                            <li><i class="fas fa-check"></i> Jungle view balcony</li>
-                            <li><i class="fas fa-check"></i> Comfortable bedding</li>
-                            <li><i class="fas fa-check"></i> Natural ventilation</li>
-                        </ul>
+                        <h3 data-translate="room-double-title">Double Room</h3>
+                        <div class="room-price">
+                            <span class="price">BOB 230</span>
+                            <span class="price-period" data-translate="price-per-night">per night</span>
+                        </div>
+                        <p data-translate="room-double-desc">Spacious double room with 1 queen bed, perfect for couples or solo travelers seeking comfort and privacy.</p>
+                        
+                        <div class="room-features">
+                            <div class="feature-group">
+                                <h4 data-translate="room-features-title">Room Features</h4>
+                                <ul>
+                                    <li><i class="fas fa-bed"></i> <span data-translate="feature-queen-bed">1 Queen bed</span></li>
+                                    <li><i class="fas fa-users"></i> <span data-translate="feature-max-guests">Max. 2 guests</span></li>
+                                    <li><i class="fas fa-bath"></i> <span data-translate="feature-private-bathroom">Private bathroom</span></li>
+                                    <li><i class="fas fa-kitchen-set"></i> <span data-translate="feature-kitchenette">Private kitchenette</span></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-group">
+                                <h4 data-translate="views-outdoor-title">Views & Outdoor</h4>
+                                <ul>
+                                    <li><i class="fas fa-tree"></i> <span data-translate="feature-garden-view">Garden view</span></li>
+                                    <li><i class="fas fa-swimming-pool"></i> <span data-translate="feature-pool-view">Pool view</span></li>
+                                    <li><i class="fas fa-mountain"></i> <span data-translate="feature-mountain-view">Mountain view</span></li>
+                                    <li><i class="fas fa-city"></i> <span data-translate="feature-city-view">City view</span></li>
+                                    <li><i class="fas fa-home"></i> <span data-translate="feature-balcony">Balcony & Terrace</span></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-group">
+                                <h4 data-translate="amenities-title">Amenities</h4>
+                                <ul>
+                                    <li><i class="fas fa-snowflake"></i> <span data-translate="feature-ac">Air conditioning</span></li>
+                                    <li><i class="fas fa-wine-bottle"></i> <span data-translate="feature-minibar">Minibar</span></li>
+                                    <li><i class="fas fa-wifi"></i> <span data-translate="feature-wifi">Free WiFi</span></li>
+                                    <li><i class="fas fa-utensils"></i> <span data-translate="feature-microwave">Microwave & Oven</span></li>
+                                    <li><i class="fas fa-coffee"></i> <span data-translate="feature-coffee">Tea/Coffee maker</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="booking-info">
+                            <p><i class="fas fa-credit-card"></i> <span data-translate="booking-no-prepay">No prepayment needed – pay at property</span></p>
+                            <p><i class="fas fa-exclamation-triangle"></i> <span data-translate="booking-rooms-left">Only 5 rooms left!</span></p>
+                        </div>
+                        
+                        <a href="https://wa.me/59171148008?text=Hi!%20I'm%20interested%20in%20booking%20a%20Double%20Room%20at%20Mirador%20Jungle%20el%20Macuti.%20Can%20you%20help%20me%20with%20availability?" target="_blank" class="btn-primary" data-translate="book-double-room">Book Double Room</a>
                     </div>
                 </div>
                 
                 <div class="room-card">
-                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hammock area">
                     <div class="room-content">
-                        <h3>Shared Dormitory</h3>
-                        <p>Budget-friendly option with shared facilities, perfect for backpackers and solo travelers looking to connect with nature and fellow adventurers.</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Shared bathroom</li>
-                            <li><i class="fas fa-check"></i> Common relaxation area</li>
-                            <li><i class="fas fa-check"></i> Mosquito nets</li>
-                            <li><i class="fas fa-check"></i> Lockers available</li>
-                        </ul>
+                        <h3 data-translate="room-single-title">Single Occupancy</h3>
+                        <div class="room-price">
+                            <span class="price">BOB 115</span>
+                            <span class="price-period" data-translate="price-per-night">per night</span>
+                        </div>
+                        <p data-translate="room-single-desc">Perfect for solo travelers - same great double room but exclusively for one guest at a special rate.</p>
+                        
+                        <div class="room-features">
+                            <div class="feature-group">
+                                <h4 data-translate="room-features-title">Room Features</h4>
+                                <ul>
+                                    <li><i class="fas fa-bed"></i> <span data-translate="feature-queen-bed">1 Queen bed</span></li>
+                                    <li><i class="fas fa-user"></i> <span data-translate="feature-single-guest">Only for 1 guest</span></li>
+                                    <li><i class="fas fa-bath"></i> <span data-translate="feature-private-bathroom">Private bathroom</span></li>
+                                    <li><i class="fas fa-kitchen-set"></i> <span data-translate="feature-kitchenette">Private kitchenette</span></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-group">
+                                <h4 data-translate="views-outdoor-title">Views & Outdoor</h4>
+                                <ul>
+                                    <li><i class="fas fa-tree"></i> <span data-translate="feature-garden-view">Garden view</span></li>
+                                    <li><i class="fas fa-swimming-pool"></i> <span data-translate="feature-pool-view">Pool view</span></li>
+                                    <li><i class="fas fa-mountain"></i> <span data-translate="feature-mountain-view">Mountain view</span></li>
+                                    <li><i class="fas fa-city"></i> <span data-translate="feature-city-view">City view</span></li>
+                                    <li><i class="fas fa-home"></i> <span data-translate="feature-balcony">Balcony & Terrace</span></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-group">
+                                <h4 data-translate="amenities-title">Amenities</h4>
+                                <ul>
+                                    <li><i class="fas fa-snowflake"></i> <span data-translate="feature-ac">Air conditioning</span></li>
+                                    <li><i class="fas fa-wine-bottle"></i> <span data-translate="feature-minibar">Minibar</span></li>
+                                    <li><i class="fas fa-wifi"></i> <span data-translate="feature-wifi">Free WiFi</span></li>
+                                    <li><i class="fas fa-utensils"></i> <span data-translate="feature-microwave">Microwave & Oven</span></li>
+                                    <li><i class="fas fa-coffee"></i> <span data-translate="feature-coffee">Tea/Coffee maker</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="booking-info">
+                            <p><i class="fas fa-credit-card"></i> <span data-translate="booking-no-prepay">No prepayment needed – pay at property</span></p>
+                            <p><i class="fas fa-star"></i> <span data-translate="booking-exclusive">Exclusive single occupancy rate</span></p>
+                        </div>
+                        
+                        <a href="https://wa.me/59171148008?text=Hi!%20I'm%20interested%20in%20booking%20a%20Single%20Occupancy%20room%20at%20Mirador%20Jungle%20el%20Macuti.%20Can%20you%20help%20me%20with%20availability?" target="_blank" class="btn-primary" data-translate="book-single-room">Book Single Room</a>
                     </div>
                 </div>
             </div>
@@ -122,56 +216,56 @@
     <!-- Activities Section -->
     <section id="activities" class="activities">
         <div class="container">
-            <h2>Amazon Adventures Await</h2>
-            <p class="section-subtitle">Explore the wonders of the Bolivian rainforest</p>
+            <h2 data-translate="activities-title">Amazon Adventures Await</h2>
+            <p class="section-subtitle" data-translate="activities-subtitle">Explore the wonders of the Bolivian rainforest</p>
             
             <div class="activities-grid">
                 <div class="activity-card">
                     <div class="activity-icon">
                         <i class="fas fa-tint"></i>
                     </div>
-                    <h3>Waterfall Hiking</h3>
-                    <p>Trek through pristine jungle trails to discover hidden waterfalls and natural swimming pools.</p>
+                    <h3 data-translate="activity-waterfall-title">Waterfall Hiking</h3>
+                    <p data-translate="activity-waterfall-desc">Trek through pristine jungle trails to discover hidden waterfalls and natural swimming pools.</p>
                 </div>
                 
                 <div class="activity-card">
                     <div class="activity-icon">
                         <i class="fas fa-binoculars"></i>
                     </div>
-                    <h3>Wildlife Watching</h3>
-                    <p>Spot exotic birds, monkeys, and other fascinating creatures in their natural habitat.</p>
+                    <h3 data-translate="activity-wildlife-title">Wildlife Watching</h3>
+                    <p data-translate="activity-wildlife-desc">Spot exotic birds, monkeys, and other fascinating creatures in their natural habitat.</p>
                 </div>
                 
                 <div class="activity-card">
                     <div class="activity-icon">
                         <i class="fas fa-ship"></i>
                     </div>
-                    <h3>River Excursions</h3>
-                    <p>Navigate the Amazon waterways and explore remote areas accessible only by boat.</p>
+                    <h3 data-translate="activity-river-title">River Excursions</h3>
+                    <p data-translate="activity-river-desc">Navigate the Amazon waterways and explore remote areas accessible only by boat.</p>
                 </div>
                 
                 <div class="activity-card">
                     <div class="activity-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>Cultural Tours</h3>
-                    <p>Visit local indigenous communities and learn about traditional ways of life in the Amazon.</p>
+                    <h3 data-translate="activity-cultural-title">Cultural Tours</h3>
+                    <p data-translate="activity-cultural-desc">Visit local indigenous communities and learn about traditional ways of life in the Amazon.</p>
                 </div>
                 
                 <div class="activity-card">
                     <div class="activity-icon">
                         <i class="fas fa-camera"></i>
                     </div>
-                    <h3>Photography Tours</h3>
-                    <p>Capture the stunning beauty of the rainforest with guided photography expeditions.</p>
+                    <h3 data-translate="activity-photo-title">Photography Tours</h3>
+                    <p data-translate="activity-photo-desc">Capture the stunning beauty of the rainforest with guided photography expeditions.</p>
                 </div>
                 
                 <div class="activity-card">
                     <div class="activity-icon">
                         <i class="fas fa-moon"></i>
                     </div>
-                    <h3>Night Walks</h3>
-                    <p>Experience the jungle after dark and discover its nocturnal inhabitants.</p>
+                    <h3 data-translate="activity-night-title">Night Walks</h3>
+                    <p data-translate="activity-night-desc">Experience the jungle after dark and discover its nocturnal inhabitants.</p>
                 </div>
             </div>
         </div>
@@ -180,27 +274,36 @@
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
         <div class="container">
-            <h2>Gallery</h2>
-            <p class="section-subtitle">Glimpses of paradise</p>
+            <h2 data-translate="gallery-title">Gallery</h2>
+            <p class="section-subtitle" data-translate="gallery-subtitle">Glimpses of paradise</p>
             
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Waterfall">
+                    <img src="images/gallery/waterfall.jpg" alt="Beautiful waterfall at Mirador Jungle el Macuti">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Jungle canopy">
+                    <img src="images/gallery/Vista view.jpg" alt="Stunning vista view from the lodge">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Amazon river">
+                    <img src="images/gallery/Outdoor paradise.jpg" alt="Outdoor paradise setting">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Tropical birds">
+                    <img src="images/gallery/empty hammock with view.jpg" alt="Relaxing hammock with jungle view">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Lodge accommodations">
+                    <img src="images/gallery/parrot.jpg" alt="Colorful parrot - local wildlife">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Room interior">
+                    <img src="images/gallery/bar.jpg" alt="Lodge bar and social area">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/Woman.jpg" alt="Guest enjoying the natural setting">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/walking.jpg" alt="Nature walking trails">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/food.jpg" alt="Delicious local cuisine">
                 </div>
             </div>
         </div>
@@ -209,20 +312,22 @@
     <!-- Testimonials Section -->
     <section class="testimonials">
         <div class="container">
-            <h2>What Our Guests Say</h2>
+            <h2 data-translate="testimonials-title">What Our Guests Say</h2>
             <div class="testimonials-grid">
                 <div class="testimonial">
-                    <p>"I received a really warm and lovely welcome and I really enjoyed my time there! Thank you very much! Probably the nicest hostel I've ever been to."</p>
+                    <p data-translate="testimonial-1">"I received a really warm and lovely welcome and I really enjoyed my time there! Thank you very much! Probably the nicest hostel I've ever been to."</p>
                     <div class="testimonial-author">
+                        <img src="https://flagcdn.com/w20/de.png" alt="Germany flag" class="country-flag">
                         <strong>Svenja</strong>
-                        <span>Germany</span>
+                        <span data-translate="country-germany">Germany</span>
                     </div>
                 </div>
                 <div class="testimonial">
-                    <p>"Ideal place for those who love nature and tranquility. Beautiful view, garden full of flowers and plants. Spacious room with bathroom. Pool and kitchen are available. Rosa is welcoming and very kind!"</p>
+                    <p data-translate="testimonial-2">"Ideal place for those who love nature and tranquility. Beautiful view, garden full of flowers and plants. Spacious room with bathroom. Pool and kitchen are available. Rosa is welcoming and very kind!"</p>
                     <div class="testimonial-author">
+                        <img src="https://flagcdn.com/w20/it.png" alt="Italy flag" class="country-flag">
                         <strong>Paolo</strong>
-                        <span>Italy</span>
+                        <span data-translate="country-italy">Italy</span>
                     </div>
                 </div>
             </div>
@@ -232,53 +337,45 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Us</h2>
+            <h2 data-translate="contact-title">Contact Us</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <p>Ready to experience the magic of the Amazon? Contact us to plan your unforgettable stay.</p>
+                    <h3 data-translate="contact-get-in-touch">Get in Touch</h3>
+                    <p data-translate="contact-description">Ready to experience the magic of the Amazon? Contact us to plan your unforgettable stay.</p>
                     
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Location</h4>
-                            <p>Rurrenabaque, Beni Department<br>Bolivia</p>
+                            <h4 data-translate="contact-location-title">Location</h4>
+                            <p data-translate="contact-location-text">Rurrenabaque, Beni Department<br>Bolivia</p>
                         </div>
                     </div>
                     
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Phone</h4>
-                            <p>+591 XXX XXXXX</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@miradorjunglemacuti.com</p>
+                            <h4 data-translate="contact-phone-title">Phone / WhatsApp</h4>
+                            <p><a href="https://wa.me/59171148008" target="_blank" style="color: #2d5a27; text-decoration: none;">+591 71148008</a></p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">Send Message</button>
-                    </form>
+                <div class="contact-map">
+                    <h3 data-translate="contact-find-us">Find Us</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.123456789!2d-67.52708!3d-14.44264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDI2JzMzLjUiUyA2N8KwMzEnMzcuNSJX!5e0!3m2!1sen!2sbo!4v1692000000000!5m2!1sen!2sbo&q=HF5Q%2B89Q%2C+Rurrenabaque"
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <p style="margin-top: 1rem; color: #666; text-align: center;">
+                        <strong data-translate="contact-address-label">Address:</strong> HF5Q+89Q, Rurrenabaque, Bolivia
+                    </p>
                 </div>
             </div>
         </div>
@@ -288,9 +385,9 @@
     <section id="book" class="book-now">
         <div class="container">
             <div class="book-content">
-                <h2>Ready for Your Amazon Adventure?</h2>
-                <p>Book your stay at Mirador Jungle el Macuti and immerse yourself in the beauty of the Bolivian rainforest.</p>
-                <a href="https://www.booking.com" target="_blank" class="btn-primary btn-large">Reserve on Booking.com</a>
+                <h2 data-translate="book-title">Ready for Your Amazon Adventure?</h2>
+                <p data-translate="book-description">Book your stay at Mirador Jungle el Macuti and immerse yourself in the beauty of the Bolivian rainforest.</p>
+                <a href="https://wa.me/59171148008?text=Hi!%20I'm%20interested%20in%20booking%20a%20stay%20at%20Mirador%20Jungle%20el%20Macuti.%20Can%20you%20help%20me%20with%20availability%20and%20rates?" target="_blank" class="btn-primary btn-large" data-translate="book-whatsapp">Book via WhatsApp</a>
             </div>
         </div>
     </section>
@@ -301,33 +398,33 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Mirador Jungle el Macuti</h3>
-                    <p>Your gateway to the Amazon rainforest in Rurrenabaque, Bolivia.</p>
+                    <p data-translate="footer-description">Your gateway to the Amazon rainforest in Rurrenabaque, Bolivia.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61555688502250" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/59171148008" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-translate="footer-quick-links">Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#accommodations">Accommodations</a></li>
-                        <li><a href="#activities">Activities</a></li>
+                        <li><a href="#home" data-translate="nav-home">Home</a></li>
+                        <li><a href="#about" data-translate="nav-about">About</a></li>
+                        <li><a href="#accommodations" data-translate="nav-accommodations">Accommodations</a></li>
+                        <li><a href="#activities" data-translate="nav-activities">Activities</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Rurrenabaque, Bolivia</p>
-                    <p><i class="fas fa-envelope"></i> info@miradorjunglemacuti.com</p>
+                    <h4 data-translate="footer-contact-info">Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> HF5Q+89Q, Rurrenabaque, Bolivia</p>
+                    <p><i class="fas fa-phone"></i> +591 71148008</p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Mirador Jungle el Macuti. All rights reserved.</p>
+                <p>&copy; 2025 Mirador Jungle el Macuti. <span data-translate="footer-rights">All rights reserved.</span></p>
+                <p><span data-translate="footer-made-with">Made with ❤️ by</span> <a href="https://nomadicwebstudio.netlify.app/" target="_blank" style="color: #4a7c59; text-decoration: none;">Nomadic Web Studio</a></p>
             </div>
         </div>
     </footer>
